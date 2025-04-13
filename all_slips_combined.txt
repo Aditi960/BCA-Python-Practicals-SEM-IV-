@@ -1,0 +1,571 @@
+
+
+# --- Start of slip1_q1.py ---
+
+# Python code for Slip 1, Question 1
+
+
+# --- End of slip1_q1.py ---
+
+
+
+# --- Start of slip1_q2.py ---
+
+# Python code for Slip 1, Question 2
+
+
+# --- End of slip1_q2.py ---
+
+
+
+# --- Start of slip2_q1.py ---
+
+# Python code for Slip 2, Question 1
+mytuple=(1,2,3,4,5,6,7,8,9)
+
+print("The 4th element from the front is:-",mytuple[3],"\n")
+print("the 4th element from the last is :-",mytuple[-4],"\n")
+
+# --- End of slip2_q1.py ---
+
+
+
+# --- Start of slip2_q2.py ---
+
+# Python code for Slip 2, Question 2
+from collections import Counter
+dict1={'a':1,'b':3}
+dict2={'b':2,'c':9}
+
+add=Counter(dict1)+Counter(dict2)
+print(dict(add))
+
+# --- End of slip2_q2.py ---
+
+
+
+# --- Start of slip3_q1.py ---
+
+# Python code for Slip 3, Question 1
+tuple=(1,2,3,4,4)
+
+repeat=[x for x in tuple if tuple.count(x)>1]
+
+print(set(repeat))
+
+# --- End of slip3_q1.py ---
+
+
+
+# --- Start of slip3_q2.py ---
+
+# Python code for Slip 3, Question 2
+weekday={'Monday','Tuesday','Wednesday'}
+print("Weekday before any updates")
+print(weekday,"\n")
+print("Weekday after adding one day")
+weekday.add('Thursday')
+print(weekday,"\n")
+print("Weekday after updating multiple day ")
+weekday.update(['Friday','Sarturday'])
+print(weekday,"\n")
+
+
+# --- End of slip3_q2.py ---
+
+
+
+# --- Start of slip4_q1.py ---
+
+# Python code for Slip 4, Question 1
+t=(4,2,6,8,1,8,10)
+print(sorted(t))
+
+# --- End of slip4_q1.py ---
+
+
+
+# --- Start of slip4_q2.py ---
+
+# Python code for Slip 4, Question 2
+n=int(input("Enter n\n"))
+sum=0
+
+for x in range(0,n+1):
+    sum=sum+x
+print(f"the num of number from 0 to {n} is {sum}")
+
+# --- End of slip4_q2.py ---
+
+
+
+# --- Start of slip5_q1.py ---
+
+# Python code for Slip 5, Question 1
+set1={1,2,3,4}
+set2={5,6,7,8}
+
+print("Set difference :=\n",set1-set2)
+print("symetric differencr :=\n",set1^set2)
+
+
+# --- End of slip5_q1.py ---
+
+
+
+# --- Start of slip5_q2.py ---
+
+# Python code for Slip 5, Question 2
+t=(1,1,1,2,3,4,4,4)
+
+repeat=[x for x in t if t.count(x)>2]
+print(set(repeat))
+
+# --- End of slip5_q2.py ---
+
+
+
+# --- Start of slip6_q1.py ---
+
+# Python code for Slip 6, Question 1
+t=(2,5,1,4,7)
+maximum=max(t)
+miniimum=min(t)
+print(f"maximum in the tuple is {maximum}\n")
+print(f"minimum in the tuple is {miniimum}\n")
+
+# --- End of slip6_q1.py ---
+
+
+
+# --- Start of slip6_q2.py ---
+
+# Python code for Slip 6, Question 2
+t=(1,2,3,4,5)
+print(type(t)," ",(t))
+l=list(t)
+
+print(type(l)," ",(l))
+
+# --- End of slip6_q2.py ---
+
+
+
+# --- Start of slip7_q1.py ---
+
+# Python code for Slip 7, Question 1
+s={1,2,3,4,5,6,7}
+avg=sum(s)/len(s)
+print(avg)
+
+# --- End of slip7_q1.py ---
+
+
+
+# --- Start of slip7_q2.py ---
+
+# Python code for Slip 7, Question 2
+
+
+list={1,2,3,4}
+mul=1
+for x in list:
+    mul=mul*x
+
+print(mul)
+
+# --- End of slip7_q2.py ---
+
+
+
+# --- Start of slip8_q1.py ---
+
+# Python code for Slip 8, Question 1
+t1=(1,2,3,4)
+t2=(5,6,7,8)
+
+t3=t1+t2
+print(t3)
+
+# --- End of slip8_q1.py ---
+
+
+
+# --- Start of slip8_q2.py ---
+
+# Python code for Slip 8, Question 2
+l1={'a':9,'b':2,'c':6,'d':3,'e':1,'f':0,'g':4}
+assending={}
+desending={}
+assending=sorted(l1)
+desending=sorted(l1,reverse=True)
+
+print("Original list:- \n",l1)
+print("sorted list(assending order):- \n",assending)
+print("sorted list(desending order):- \n",desending)
+
+
+# --- End of slip8_q2.py ---
+
+
+
+# --- Start of slip9_q1.py ---
+
+# Python code for Slip 9, Question 1
+
+
+side=float(input("enter side\n"))
+
+square=lambda s:s*s
+print(square(side))
+
+
+# --- End of slip9_q1.py ---
+
+
+
+# --- Start of slip9_q2.py ---
+
+# Python code for Slip 9, Question 2
+str=input("enter a string\n")
+dictt={}
+for char in str:
+    if char in dictt:
+        dictt[char]+=1
+    else:
+        dictt[char]=1
+
+print("Character frequence is :- ",dictt)
+
+
+# --- End of slip9_q2.py ---
+
+
+
+# --- Start of slip10_q1.py ---
+
+# Python code for Slip 10, Question 1
+
+n=int(input("enter a number"))
+rev=0
+print("the number is :- ",n)
+while n !=0:
+    rem=n%10
+    rev=rev*10+rem
+    n=n//10
+
+print("number afte reversing is :- ",rev)
+
+
+# --- End of slip10_q1.py ---
+
+
+
+# --- Start of slip10_q2.py ---
+
+# Python code for Slip 10, Question 2
+# Python code for Slip 10, Question 1
+
+n=int(input("enter a number"))
+rev=0
+
+print("the number is :- ",n)
+while n !=0:
+    rem=n%10
+    rev=rev*10+rem
+    n=n//10
+
+
+
+print("number afte reversing is :- ",rev)
+
+# --- End of slip10_q2.py ---
+
+
+
+# --- Start of slip11_q1.py ---
+
+# Python code for Slip 11, Question 1
+
+str=input("enter string := ")
+counter=0
+for char in str:
+    if char != " ":
+        counter+=1
+print(counter)
+
+# --- End of slip11_q1.py ---
+
+
+
+# --- Start of slip11_q2.py ---
+
+# Python code for Slip 11, Question 2
+def remove(s):
+    return s[::2]
+
+text=input("Enter string:- ")
+print(f"\n string before removing the character:- {text}")
+
+result=remove(text)
+print(f"\n string after removing the characters :- {result}")
+
+# --- End of slip11_q2.py ---
+
+
+
+# --- Start of slip12_q1.py ---
+
+# Python code for Slip 12, Question 1
+
+a,b=0,1
+n=int(input("enter range n:- \n"))
+
+for x in range(n):
+    print(a,end=",")
+    a,b=b,a+b
+
+# --- End of slip12_q1.py ---
+
+
+
+# --- Start of slip12_q2.py ---
+
+# Python code for Slip 12, Question 2
+
+n=int(input("enter a number "))
+sq={x:x*x for x in range(1,n+1)}
+print(sq)
+
+# --- End of slip12_q2.py ---
+
+
+
+# --- Start of slip13_q1.py ---
+
+# Python code for Slip 13, Question 1
+def display(tup):
+    print("the max no is ",max(tup))
+    print("the min no is ",min(tup))
+    print("the max no is ",sum(tup))
+n=int(input("enter n"))
+t=()
+print("enter tuple members")
+for x in range (n):
+    num=int(input())
+    t+=(num,)
+
+display(t)
+
+
+
+
+
+# --- End of slip13_q1.py ---
+
+
+
+# --- Start of slip13_q2.py ---
+
+# Python code for Slip 13, Question 2
+n=int(input("enter n:- "))
+print(f"\nprime no b/w 2 to {n} are:- \n")
+
+for i in range(2,n):
+    if n%i==0:
+        print(i)
+
+
+# --- End of slip13_q2.py ---
+
+
+
+# --- Start of slip14_q1.py ---
+
+# Python code for Slip 14, Question 1
+def is_palindrome(st):
+    result=st[::-1]
+    if result==st:
+        return True
+    else:
+        False
+
+str=input("enter a string:- ")
+check=is_palindrome(str)
+if check==True:
+    print(f"{str} is palindrome")
+else:
+    print(f"{str} is not palindrome")
+
+
+
+# --- End of slip14_q1.py ---
+
+
+
+# --- Start of slip14_q2.py ---
+
+# Python code for Slip 14, Question 2
+
+no=int(input("enter a number"))
+total=0
+while no>0:
+    total+=no%10
+    no=no//10
+
+print(f"sum of digit of {no} is = {total}")
+
+
+# --- End of slip14_q2.py ---
+
+
+
+# --- Start of slip15_q1.py ---
+
+# Python code for Slip 15, Question 1
+t=(1,2,3,4,5,6)
+half=len(t)//2
+first=t[:half]
+second=t[half:]
+
+print(f"first half :- {first}\n")
+print(f"second half:- {second}\n")
+
+# --- End of slip15_q1.py ---
+
+
+
+# --- Start of slip15_q2.py ---
+
+# Python code for Slip 15, Question 2
+s=int(input("enter no :- "))
+a,b=1,2
+for x in range(s):
+    print(a,end=",")
+    a,b=b,a+b
+    
+
+
+# --- End of slip15_q2.py ---
+
+
+
+# --- Start of slip16_q1.py ---
+
+# Python code for Slip 16, Question 1
+str=input("enter a string:- ")
+lowercase=str.lower()
+uppercase=str.upper()
+
+print(f"{str} in lower case {lowercase}\n")
+print(f"{str} in lower case {uppercase}")
+
+# --- End of slip16_q1.py ---
+
+
+
+# --- Start of slip16_q2.py ---
+
+# Python code for Slip 16, Question 2
+
+n=int(input("enter a no"))
+print("prime no are")
+for num in range(2,n+1):
+    for i in range(2,num):
+        if n%i==0:
+            print(i)
+
+
+
+# --- End of slip16_q2.py ---
+
+
+
+# --- Start of slip17_q1.py ---
+
+# Python code for Slip 17, Question 1
+
+
+# --- End of slip17_q1.py ---
+
+
+
+# --- Start of slip17_q2.py ---
+
+# Python code for Slip 17, Question 2
+
+
+# --- End of slip17_q2.py ---
+
+
+
+# --- Start of slip18_q1.py ---
+
+# Python code for Slip 18, Question 1
+
+
+# --- End of slip18_q1.py ---
+
+
+
+# --- Start of slip18_q2.py ---
+
+# Python code for Slip 18, Question 2
+
+
+# --- End of slip18_q2.py ---
+
+
+
+# --- Start of slip19_q1.py ---
+
+# Python code for Slip 19, Question 1
+
+
+# --- End of slip19_q1.py ---
+
+
+
+# --- Start of slip19_q2.py ---
+
+# Python code for Slip 19, Question 2
+
+
+# --- End of slip19_q2.py ---
+
+
+
+# --- Start of slip20_q1.py ---
+
+# Python code for Slip 20, Question 1
+
+
+# --- End of slip20_q1.py ---
+
+
+
+# --- Start of slip20_q2.py ---
+
+# Python code for Slip 20, Question 2
+
+
+# --- End of slip20_q2.py ---
+
+
+
+# --- Start of slip21_q1.py ---
+
+# Python code for Slip 21, Question 1
+
+
+# --- End of slip21_q1.py ---
+
+
+
+# --- Start of slip21_q2.py ---
+
+# Python code for Slip 21, Question 2
+
+
+# --- End of slip21_q2.py ---
+
